@@ -1,12 +1,26 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import { Route, Routes } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import Home from './pages/Home';
+import About from "./pages/About";
+import Pets from './pages/Pets'
+import Favourites from './pages/Favourites'
+import 'bootstrap/dist/css/bootstrap.min.css';  //I'm using the CDN instead
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Kennel Buddies</h1>
-    </div>
-  );
+
+const App = () => {
+    return (
+    <div>
+        <NavBar />
+        <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/booked' element={<Pets />} />
+            <Route path='/doctors' element={<Favourites /> } />
+        </Routes>
+        </div>
+    )
 }
 
 export default App;
