@@ -1,10 +1,30 @@
-import React from 'react'
+import React from 'react';
+import Button from 'react-bootstrap/Button';
 
 function Home() {
+  function handleClick() {
+    //console.log("<<<>>>")
+  }
+
   return (
-    <div className="home">
-      <h1>Kennel Buddies Home</h1>
-    </div>
+    <article className="home home-bg">
+      <div className="transbox">
+        <section>
+          <h1>KENNEL BUDDIES</h1>
+             <div>
+              <p>Get your kind buddy!</p>
+             </div>
+             <Button onClick={handleClick}
+                  href="/pets"
+                  className="see-more"
+                  activeStyle={{
+                    background: "darkblue",
+                  }}>
+                  See More
+             </Button>
+        </section>
+      </div>
+    </article>
   );
 }
 
