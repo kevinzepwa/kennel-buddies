@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 
-function Home() {
+function Home( { data, setData } ) {
   function handleClick() {
     //console.log("<<<>>>")
   }

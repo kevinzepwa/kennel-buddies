@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './App.css';
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
@@ -10,32 +10,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';  //I'm using the CDN instead
 
 
 function App() {
+    const [ data, setData ] = useState([])
+    const [ favourite, setFavourite ] = useState([])
+    const url_1 = "https://better-abalone-text.glitch.me/data"
+    const url_2 = "https://better-abalone-text.glitch.me/booked"
 
-    // const imgPlaceholder = require("./assets/images/splash.png");
-    // const imgPlaceholder = "./assets/images/splash.png"
-    
-    const img = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Felis_silvestris_catus_lying_on_rice_straw.jpg/220px-Felis_silvestris_catus_lying_on_rice_straw.jpg"
-    
-    const data = [
-        {
-            id: 1,
-            name: "Damian",
-            owner: "Luka",
-            location: "Nairobi",
-            img: img
-        },
-        {
-            id: 2,
-            name: "Felisita",
-            owner: "Mark",
-            location: "Kijabe",
-            img: img
-            }
-        ]
+    useEffect(() => {
+        fetch(url_1)
+        .then(res => res.json()) 
+        .then(newData => setData(newData))
+    }, []);
 
-        // const [ data, setData ] = useState([])
-        const [ favourite, setFavourite ] = useState([])
-
+    useEffect(() => {
+        fetch(url_2)
+        .then(res => res.json())
+        .then(newFavourite => setFavourite(newFavourite))
+    }, []);
 
     return (
     <div>
@@ -44,7 +34,8 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/pets' element={<Pets 
-                                            data={data}
+                                            data={data} 
+                                            setData={setData}
                                             favourite={favourite}
                                             setFavourite={setFavourite}
                                             />} />

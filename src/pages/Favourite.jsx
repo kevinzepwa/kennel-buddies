@@ -17,11 +17,13 @@ function Favourite( { favourite, setFavourite, data } ) {
     setTimeout((timing) => setTiming(false), 2000);
 
     const handleDelete = e => {
-    console.log(data)
-      const deletedPet = favourite.filter(d => {
+    // console.log(data)
+      const filteredPet = favourite.filter(d => {
         return ((d.id.toString() !== e.currentTarget.value.toString()))
       })
-      setFavourite(deletedPet) //!!
+      // setFavourite([...favourite, ...filteredPets])
+      console.log(filteredPet)
+      setFavourite(filteredPet) //!!
     };
 
     if (timing === true) {

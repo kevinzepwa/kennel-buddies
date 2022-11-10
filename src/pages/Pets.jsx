@@ -7,8 +7,9 @@ import Button from 'react-bootstrap/Button';
 import ListGroupItem from 'react-bootstrap/esm/ListGroupItem';
 import PlaceHolderComp from '../components/PlaceHolderComp';
 import Footer from '../components/Footer';
+import Search from '../components/Search';
 
-function Pets( { data, favourited, setFavourite } ) {
+function Pets( { data, setData, favourite, setFavourite } ) {
     const [ timing, setTiming ] = useState(true)
 
     // console.log(data)
@@ -26,13 +27,23 @@ function Pets( { data, favourited, setFavourite } ) {
       const filteredPets = data.filter(d => {
         return ((d.id.toString() === e.currentTarget.value.toString()))
       })
-      setFavourite(filteredPets)
+      console.log(filteredPets[0])
+      setFavourite([...favourite, ...filteredPets])
+      console.log(favourite)
     };
+
+    // // Append a single item
+    // this.setState(prevState => ({
+    //   arr: [...prevState.arr, 'new item']
+    // }));
+      // setFavourite(prevState => (...prevState, filteredPets));
 
     return (
       <>
+      {/* <Search data={data} setData={setData} /> */}
+      <p>Search</p>
       <Container fluid="md" className='mainContainer'>
-       <Row className="justify-content-md-center">
+      <Row className="justify-content-md-center">
         { data.map(data => ( 
         <Card className='pet-card'>
           <>
