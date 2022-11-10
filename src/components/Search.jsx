@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 function Search( { data, setData } ) {
   const [ searchValue, setSearchValue ] = useState("")
 
-  const initData = data
+  // const initData = data
 
   useEffect(() => {
     const filteredPets = data.filter(d => {
@@ -11,7 +11,7 @@ function Search( { data, setData } ) {
       return lowerPet.includes(searchValue.toLowerCase())
       })
       setData(filteredPets)
-  }, [searchValue]);
+  });
 
   const onChange = (e) => setSearchValue(e.target.value)
 

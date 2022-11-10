@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import ListGroupItem from 'react-bootstrap/esm/ListGroupItem';
 import PlaceHolderComp from '../components/PlaceHolderComp';
 import Footer from '../components/Footer';
-import Search from '../components/Search';
+// import Search from '../components/Search';
 
 function Pets( { data, setData, favourite, setFavourite } ) {
     const [ timing, setTiming ] = useState(true)
