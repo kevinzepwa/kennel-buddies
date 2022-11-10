@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import About from "./pages/About";
 import Pets from './pages/Pets'
 import Favourites from './pages/Favourites'
-import Contact from './pages/Contact'
+import Admin from './pages/Admin'
 import 'bootstrap/dist/css/bootstrap.min.css';  //I'm using the CDN instead
 
 
@@ -21,7 +21,7 @@ const App = () => {
                     <Route path='/about' element={<About />} />
                     <Route path='/booked' element={<Pets />} />
                     <Route path='/doctors' element={<Favourites /> } />
-                    <Route path='/contact' element={<Contact /> } />
+                    <Route path='/admin' element={<Admin /> } />
                 </Routes>
             </div>
             <Footer />

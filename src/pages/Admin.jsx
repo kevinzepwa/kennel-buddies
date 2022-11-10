@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Contact = () => {
+const Admin = () => {
   return (
     <>
         <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
@@ -33,4 +33,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Admin
