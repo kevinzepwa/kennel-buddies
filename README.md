@@ -19,8 +19,8 @@ This is an online pet shop application. The app contains the pet catalogue. You 
 ## Link
 You can view the live page from [here](https://rakem.netlify.app/)
 
-## Authors(pet-lovers)
-- Randell, Kevin, Maurene 👨🏽‍⚕️
+## Authors
+- (pet-lovers) Randell, Kevin, Maurene 👨🏽‍⚕️ 
 
 ## Setup
 - clone the repo
