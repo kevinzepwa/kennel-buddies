@@ -4,6 +4,7 @@
   - [Preview](#preview)
   - [Description](#description)
   - [Link](#link)
+  - [Description](#description)
   - [Authors](#Pet Lovers)
   - [Setup](#setup)
     - [Running server on terminal](#live-server-on-vscodeoption-2)
