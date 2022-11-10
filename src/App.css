@@ -163,3 +163,13 @@ div.transbox h1 {
   background: #b8ffb2;
   color: #fff;
 }
+
+/* Footer */
+.footer {
+  color: #fff;
+  background-color: #002500;
+  text-align: center;
+  padding: 25px 0;
+  bottom: 0;
+  margin-top: auto;
+}
