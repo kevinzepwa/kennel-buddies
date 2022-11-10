@@ -1,10 +1,10 @@
 # Rakem App
 
 - [KennelBuddies](#KennelBuddies)
-  - [Preview](#Preview)
-  - [Description](#Description)
+  - [Preview](#preview)
+  - [Description](#description)
   - [Link](#link)
-  - [Authors](#Authors)
+  - [Authors](#authors)
   - [Setup](#setup)
     - [Running server on terminal](#live-server-on-vscodeoption-2)
   - [Licenses](#licenses)
@@ -13,10 +13,10 @@
 ## Preview
 ![alt text][preview]
 
-## Description[description]
+## Description
 This is an online pet shop application. The app contains the pet catalogue. You can choose your favourite pet and add them to your favourites. The app is served by a Ruby backend (endpoint )
 
-## link
+## Link
 You can view the live page from [here](https://rakem.netlify.app/)
 
 ## Authors(pet-lovers)
