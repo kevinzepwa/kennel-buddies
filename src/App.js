@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './App.css';
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
@@ -33,6 +33,10 @@ function App() {
             }
         ]
 
+        // const [ data, setData ] = useState([])
+        const [ favourite, setFavourite ] = useState([])
+
+
     return (
     <div>
         <NavBar />
@@ -41,9 +45,14 @@ function App() {
             <Route path='/about' element={<About />} />
             <Route path='/pets' element={<Pets 
                                             data={data}
-                                            // imgPlaceholder={imgPlaceholder}
+                                            favourite={favourite}
+                                            setFavourite={setFavourite}
                                             />} />
-            <Route path='/favourite' element={<Favourite /> } />
+            <Route path='/favourite' element={<Favourite 
+                                            data={data}
+                                            favourite={favourite}
+                                            setFavourite={setFavourite}
+                                            />} />
         </Routes>
         </div>
     )
