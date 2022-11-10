@@ -20,7 +20,11 @@ This is an online pet shop application. The app contains the pet catalogue. You 
 You can view the live page from [here](https://kennel-buddies.netlify.app/)
 
 ## Authors
+<<<<<<< HEAD
+- (pet-lovers) Randell, Kevin, Maurene 👨🏽‍⚕️ 
+=======
 - (Pet-lovers) Randell, Kevin, Maurene 👨🏽‍⚕️ 
+>>>>>>> ee359e98d049769fa012329e034618d60995439d
 
 ## Setup
 - clone the repo

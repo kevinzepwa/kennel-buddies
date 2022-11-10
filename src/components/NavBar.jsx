@@ -50,6 +50,16 @@ function NavBar() {
           >
             Favourites
           </NavLink>
+          <NavLink
+            to="/admin"
+            exact
+            className="nav"
+            activeStyle={{
+              background: "darkblue",
+            }}
+          >
+            Admin
+          </NavLink>
         </Nav>
         </Container>
       </Navbar>
