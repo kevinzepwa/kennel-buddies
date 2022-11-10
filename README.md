@@ -1,10 +1,10 @@
 # Rakem App
 
 - [KennelBuddies](#KennelBuddies)
-  - [Preview](#preview)
-  - [Description](#description)
+  - [Preview](#Preview)
+  - [Description](#Description)
   - [Link](#link)
-  - [Authors](#pet-lovers)
+  - [Authors](#Authors)
   - [Setup](#setup)
     - [Running server on terminal](#live-server-on-vscodeoption-2)
   - [Licenses](#licenses)
@@ -19,7 +19,7 @@ This is an online pet shop application. The app contains the pet catalogue. You 
 ## link
 You can view the live page from [here](https://rakem.netlify.app/)
 
-## Authors(pet-lovers)[pet-lovers]
+## Authors(pet-lovers)
 - Randell, Kevin, Maurene 👨🏽‍⚕️
 
 ## Setup
