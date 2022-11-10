@@ -41,4 +41,4 @@ This project is licensed under the [BSD 2-Clause License ](./LICENSE)
 
 Copyright (c) 2022 Rakem
 
-[preview]: ./src/assets/images/splash.png "preview"  
+[preview]: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Felis_silvestris_catus_lying_on_rice_straw.jpg/220px-Felis_silvestris_catus_lying_on_rice_straw.jpg "preview"  
