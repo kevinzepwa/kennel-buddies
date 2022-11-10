@@ -7,7 +7,7 @@ const Contact = () => {
             <div class="col-md-5 p-lg-5 mx-auto my-5">
             <h1 class="display-4 fw-normal">For the love of pets!</h1><br></br>
             <p class="lead fw-normal">We welcome your feedback and suggestions. Use our Contact Us page to tell us what we’re doing right or what we can improve on. 
-            <br/><blockquote>‘Until one has loved an animal, a part of one’s soul remains unawakened.’</blockquote>   ~Anatole France</p>
+            <br/><blockquote>‘Until one has loved an animal, a part of one’s soul remains unawakened.’</blockquote>   <cite title="Anatole France">~Anatole France</cite></p>
             </div>
             <div class="product-device shadow-sm d-none d-md-block"></div>
             <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>

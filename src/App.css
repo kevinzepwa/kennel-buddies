@@ -1,5 +1,5 @@
 /* Add basic styling for NavLinks */
-.nav {
+/* .nav {
   display: "inline-block";
   width: 70%;
   padding: 12px;
@@ -9,12 +9,12 @@
   text-decoration: none;
   text-align: center;
   color: white;
-}
+} */
 
-.nav:hover {
+/* .nav:hover {
   background: #8faacc;
   color: white
-}
+} */
 
 .stickyNav {
   position: fixed;
