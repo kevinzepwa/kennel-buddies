@@ -41,4 +41,4 @@ This project is licensed under the [BSD 2-Clause License ](./LICENSE)
 
 Copyright (c) 2022 Rakem
 
-[preview]: ./src/components/assets/images/splash.png "preview"  
+[preview]: ./src/assets/images/splash.png "preview"  
