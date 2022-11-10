@@ -1,4 +1,4 @@
-# Medicat App
+# Rakem App
 
 - [KennelBuddies](#KennelBuddies)
   - [Preview](#preview)
