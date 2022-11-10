@@ -12,9 +12,6 @@ import Search from '../components/Search';
 function Pets( { data, setData, favourite, setFavourite } ) {
     const [ timing, setTiming ] = useState(true)
 
-    // console.log(data)
-    // console.log(imgPlaceholder)
-
     setTimeout((timing) => setTiming(false), 2000);
 
     if (timing === true) {
@@ -28,15 +25,16 @@ function Pets( { data, setData, favourite, setFavourite } ) {
         return ((d.id.toString() === e.currentTarget.value.toString()))
       })
       console.log(filteredPets[0])
-      setFavourite([...favourite, ...filteredPets])
-      console.log(favourite)
+      // setFavourite([...favourite, ...filteredPets])
+
+     ((favourite.indexOf(filteredPets) != true ? (setFavourite([...favourite, ...filteredPets])) : console.log("no non no")))
+    //   if (favourite.indexOf(filteredPets) > -1) { }
+      // console.log(favourite)
     };
 
-    // // Append a single item
-    // this.setState(prevState => ({
-    //   arr: [...prevState.arr, 'new item']
-    // }));
-      // setFavourite(prevState => (...prevState, filteredPets));
+    // var arr = ["steve", "bob", "john"];
+
+    // console.log(arr.indexOf("bob") > -1);
 
     return (
       <>

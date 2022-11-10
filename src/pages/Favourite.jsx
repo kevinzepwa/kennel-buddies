@@ -22,7 +22,7 @@ function Favourite( { favourite, setFavourite, data } ) {
         return ((d.id.toString() !== e.currentTarget.value.toString()))
       })
       // setFavourite([...favourite, ...filteredPets])
-      console.log(filteredPet)
+      // console.log(filteredPet)
       setFavourite(filteredPet) //!!
     };
 
@@ -37,7 +37,7 @@ function Favourite( { favourite, setFavourite, data } ) {
         <Card.Header>Featured Pets</Card.Header>
       </Card>
       <Container fluid="md" className='mainContainer'>
-       <Row className="justify-content-md-center">
+      <Row className="justify-content-md-center">
         { favourite.map(data => ( 
         <Card className='pet-card'>
           <>
@@ -62,9 +62,9 @@ function Favourite( { favourite, setFavourite, data } ) {
           </>
         </Card>
         ))}
-       </Row>
+      </Row>
     </Container>
-   <Footer />
+  <Footer />
   </>
   );
 }
