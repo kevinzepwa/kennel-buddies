@@ -42,9 +42,9 @@ function About() {
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
-   <Footer />
+  <Footer />
   </>
-   );
+  );
 }
 
 export default About;
