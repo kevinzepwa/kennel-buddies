@@ -1,10 +1,10 @@
-# Medicat App
+# Rakem App
 
 - [KennelBuddies](#KennelBuddies)
   - [Preview](#preview)
   - [Description](#description)
-  - [link](#link)
-  - [Authors(RAKEM)](#Pet Lovers)
+  - [Link](#link)
+  - [Authors](#authors)
   - [Setup](#setup)
     - [Running server on terminal](#live-server-on-vscodeoption-2)
   - [Licenses](#licenses)
@@ -16,11 +16,11 @@
 ## Description
 This is an online pet shop application. The app contains the pet catalogue. You can choose your favourite pet and add them to your favourites. The app is served by a Ruby backend (endpoint )
 
-## link
+## Link
 You can view the live page from [here](https://rakem.netlify.app/)
 
-## Authors(Medicat-cartel)
-- Randell, Kevin, Maurene 👨🏽‍⚕️
+## Authors
+- (pet-lovers) Randell, Kevin, Maurene 👨🏽‍⚕️ 
 
 ## Setup
 - clone the repo
