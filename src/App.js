@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import Home from './pages/Home';
 import About from "./pages/About";
 import Pets from './pages/Pets'
-import Favourites from './pages/Favourites'
+import Favourite from './pages/Favourite'
 import 'bootstrap/dist/css/bootstrap.min.css';  //I'm using the CDN instead
 
 
@@ -43,7 +43,7 @@ function App() {
                                             data={data}
                                             // imgPlaceholder={imgPlaceholder}
                                             />} />
-            <Route path='/Favourites' element={<Favourites /> } />
+            <Route path='/favourite' element={<Favourite /> } />
         </Routes>
         </div>
     )
