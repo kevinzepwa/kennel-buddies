@@ -37,7 +37,7 @@ function Favourite( { favourite, setFavourite, data } ) {
         <Card.Header>Featured Pets</Card.Header>
       </Card>
       <Container fluid="md" className='mainContainer'>
-      <Row className="justify-content-md-center">
+        <Row className="justify-content-md-center">
         { favourite.map(data => ( 
         <Card className='pet-card'>
           <>

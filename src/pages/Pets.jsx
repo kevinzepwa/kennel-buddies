@@ -25,16 +25,9 @@ function Pets( { data, setData, favourite, setFavourite } ) {
         return ((d.id.toString() === e.currentTarget.value.toString()))
       })
       console.log(filteredPets[0])
-      // setFavourite([...favourite, ...filteredPets])
-
-     ((favourite.indexOf(filteredPets) != true ? (setFavourite([...favourite, ...filteredPets])) : console.log("no non no")))
-    //   if (favourite.indexOf(filteredPets) > -1) { }
-      // console.log(favourite)
+      setFavourite([...favourite, ...filteredPets])
+    //  ((favourite.indexOf(filteredPets) != true ? (setFavourite([...favourite, ...filteredPets])) : console.log("no non no")))
     };
-
-    // var arr = ["steve", "bob", "john"];
-
-    // console.log(arr.indexOf("bob") > -1);
 
     return (
       <>
@@ -66,9 +59,9 @@ function Pets( { data, setData, favourite, setFavourite } ) {
           </>
         </Card>
         ))}
-       </Row>
+      </Row>
     </Container>
-   <Footer />
+  <Footer />
   </>
   );
 }

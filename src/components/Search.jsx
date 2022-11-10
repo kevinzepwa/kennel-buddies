@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 function Search( { data, setData } ) {
   const [ searchValue, setSearchValue ] = useState("")
 
-//   const initData = data
+  const initData = data
 
   useEffect(() => {
     const filteredPets = data.filter(d => {
