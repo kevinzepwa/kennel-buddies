@@ -17,7 +17,7 @@
 This is an online pet shop application. The app contains the pet catalogue. You can choose your favourite pet and add them to your favourites. The app is served by a Ruby backend (endpoint )
 
 ## Link
-You can view the live page from [here](https://rakem.netlify.app/)
+You can view the live page from [here](https://kennel-buddies.netlify.app/)
 
 ## Authors
 - (pet-lovers) Randell, Kevin, Maurene 👨🏽‍⚕️ 
