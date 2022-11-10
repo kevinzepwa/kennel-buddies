@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 
-function Home() {
+function Home( { data, setData } ) {
   function handleClick() {
     //console.log("<<<>>>")
   }
@@ -11,17 +11,17 @@ function Home() {
       <div className="transbox">
         <section>
           <h1>KENNEL BUDDIES</h1>
-             <div>
+            <div>
               <p>Get your kind buddy!</p>
-             </div>
-             <Button onClick={handleClick}
+            </div>
+            <Button onClick={handleClick}
                   href="/pets"
                   className="see-more"
                   activeStyle={{
                     background: "darkblue",
                   }}>
-                  See More
-             </Button>
+                  See My Friends
+            </Button>
         </section>
       </div>
     </article>

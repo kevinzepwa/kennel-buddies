@@ -7,35 +7,38 @@ import Button from 'react-bootstrap/Button';
 import ListGroupItem from 'react-bootstrap/esm/ListGroupItem';
 import PlaceHolderComp from '../components/PlaceHolderComp';
 import Footer from '../components/Footer';
-// import Search from '../components/Search';
 
-function Pets( { data, setData, favourite, setFavourite } ) {
+function Favourite( { favourite, setFavourite, data } ) {
     const [ timing, setTiming ] = useState(true)
+
+    // console.log(data)
+    // console.log(imgPlaceholder)
 
     setTimeout((timing) => setTiming(false), 2000);
 
+    const handleDelete = e => {
+    // console.log(data)
+      const filteredPet = favourite.filter(d => {
+        return ((d.id.toString() !== e.currentTarget.value.toString()))
+      })
+      // setFavourite([...favourite, ...filteredPets])
+      // console.log(filteredPet)
+      setFavourite(filteredPet) //!!
+    };
+
     if (timing === true) {
       return (
-        // <p>"Hello"</p>
       <PlaceHolderComp data={data} />
     )};
 
-    const handleClick = e => {
-      const filteredPets = data.filter(d => {
-        return ((d.id.toString() === e.currentTarget.value.toString()))
-      })
-      console.log(filteredPets[0])
-      setFavourite([...favourite, ...filteredPets])
-    //  ((favourite.indexOf(filteredPets) != true ? (setFavourite([...favourite, ...filteredPets])) : console.log("no non no")))
-    };
-
     return (
       <>
-      {/* <Search data={data} setData={setData} /> */}
-      <p>Search</p>
+      <Card className="text-center">
+        <Card.Header>Featured Pets</Card.Header>
+      </Card>
       <Container fluid="md" className='mainContainer'>
-      <Row className="justify-content-md-center">
-        { data.map(data => ( 
+        <Row className="justify-content-md-center">
+        { favourite.map(data => ( 
         <Card className='pet-card'>
           <>
             <Card.Header>
@@ -44,14 +47,14 @@ function Pets( { data, setData, favourite, setFavourite } ) {
             <Card.Img variant="top" src={data.img} className="cardimage" />
             <Card.Body>
               <Card.Text>
-                My name is {data.name}. {data.owner} is my owner and we stay in {data.location}.
+                My name is {data.name}, {data.owner} is my owner and we stay in {data.location}.
               </Card.Text>
             </Card.Body>
             <Card.Body>
             <Stack direction="horizontal" gap={2}>
                 <ListGroupItem as="a" variant="success">
-                  <Button gap={1} onClick={handleClick} value={data.id}>
-                    Buy Me
+                  <Button gap={1} onClick={handleDelete} value={data.id}>
+                    Remove
                   </Button>
                 </ListGroupItem>
             </Stack>
@@ -66,7 +69,4 @@ function Pets( { data, setData, favourite, setFavourite } ) {
   );
 }
 
-export default Pets;
-
-
-
+export default Favourite;

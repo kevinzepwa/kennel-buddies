@@ -1,16 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
-/* Add basic styling for NavLinks */
-const linkStyles = {
-  display: "inline-block",
-  width: "70px",
-  padding: "12px",
-  margin: "0 6px 6px",
-  background: "blue",
-  textDecoration: "none",
-  color: "white"
-};
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 function NavBar() {
     return (
