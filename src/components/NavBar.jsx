@@ -58,6 +58,16 @@ function NavBar() {
         >
           Favourites
         </NavLink>
+        <NavLink
+          to="/contact"
+          exact
+          style={linkStyles}
+          activeStyle={{
+            background: "darkblue",
+          }}
+        >
+          Contact
+        </NavLink>
       </div>
     );
 }
