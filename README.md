@@ -4,7 +4,7 @@
   - [Preview](#preview)
   - [Description](#description)
   - [Link](#link)
-  - [Authors](#Pet-lovers)
+  - [Authors](#pet-lovers)
   - [Setup](#setup)
     - [Running server on terminal](#live-server-on-vscodeoption-2)
   - [Licenses](#licenses)
@@ -13,13 +13,13 @@
 ## Preview
 ![alt text][preview]
 
-## Description
+## Description[description]
 This is an online pet shop application. The app contains the pet catalogue. You can choose your favourite pet and add them to your favourites. The app is served by a Ruby backend (endpoint )
 
 ## link
 You can view the live page from [here](https://rakem.netlify.app/)
 
-## Authors(Medicat-cartel)
+## Authors(pet-lovers)[pet-lovers]
 - Randell, Kevin, Maurene 👨🏽‍⚕️
 
 ## Setup
