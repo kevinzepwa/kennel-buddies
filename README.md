@@ -4,7 +4,7 @@
   - [Preview](#preview)
   - [Description](#description)
   - [Link](#link)
-  - [Authors (RAKEM)](#Pet Lovers)
+  - [Authors](#Pet Lovers)
   - [Setup](#setup)
     - [Running server on terminal](#live-server-on-vscodeoption-2)
   - [Licenses](#licenses)
