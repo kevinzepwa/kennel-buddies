@@ -31,10 +31,10 @@ function Pets( { data, setData, favourite, setFavourite } ) {
 
     return (
       <>
-      <Search data={data} setData={setData} />
       {/* <p>Search</p> */}
       <Container fluid="md" className='mainContainer'>
       <Row className="justify-content-md-center">
+      <Search data={data} setData={setData} />
         { data.map(data => ( 
         <Card className='pet-card'>
           <>
@@ -45,6 +45,11 @@ function Pets( { data, setData, favourite, setFavourite } ) {
             {/* <Card.Body> */}
               <Card.Text className="card-txt">
                 My name is {data.name}. {data.owner} is my owner and we stay in {data.location}.
+              </Card.Text>
+            {/* </Card.Body> */}
+            {/* <Card.Body> */}
+            <Card.Text className="card-txt">
+                Price: Ksh. {data.price}
               </Card.Text>
             {/* </Card.Body> */}
             <Card.Body>

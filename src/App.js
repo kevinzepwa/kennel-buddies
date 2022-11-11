@@ -12,8 +12,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';  //I'm using the CDN instead
 function App() {
     const [ data, setData ] = useState([])
     const [ favourite, setFavourite ] = useState([])
-    const url_1 = "http://localhost:9292/api/pets"
-    // const url_2 = "http://localhost:9292/api/fav"
+    const url_1 = "http://localhost:9298/api/pets"
+    // const url_2 = "http://localhost:9298/api/fav"
 
     useEffect(() => {
         fetch(url_1)
