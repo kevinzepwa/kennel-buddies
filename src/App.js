@@ -12,8 +12,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';  //I'm using the CDN instead
 function App() {
     const [ data, setData ] = useState([])
     const [ favourite, setFavourite ] = useState([])
-    const url_1 = "https://better-abalone-text.glitch.me/data"
-    const url_2 = "https://better-abalone-text.glitch.me/booked"
+    const url_1 = "http://localhost:9292/api/pets"
+    // const url_2 = "http://localhost:9292/api/fav"
 
     useEffect(() => {
         fetch(url_1)
@@ -22,10 +22,12 @@ function App() {
     }, []);
 
     useEffect(() => {
-        fetch(url_2)
+        fetch(url_1)
         .then(res => res.json())
         .then(newFavourite => setFavourite(newFavourite))
     }, []);
+
+    // console.log(data)
 
     return (
     <div>
@@ -50,3 +52,4 @@ function App() {
 }
 
 export default App;
+
