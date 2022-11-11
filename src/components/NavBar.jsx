@@ -12,7 +12,7 @@ function NavBar() {
           /* set exact so it knows to only set activeStyle when route is deeply equal to link */
           exact
           /* add styling to Navlink */
-          style={linkStyles}
+          // style={linkStyles}
           /* add prop for activeStyle */
           activeStyle={{
             background: "darkblue",
@@ -23,7 +23,7 @@ function NavBar() {
         <NavLink
           to="/about"
           exact
-          style={linkStyles}
+          // style={linkStyles}
           activeStyle={{
             background: "darkblue",
           }}
@@ -33,7 +33,7 @@ function NavBar() {
         <NavLink
           to="/pets"
           exact
-          style={linkStyles}
+          // style={linkStyles}
           activeStyle={{
             background: "darkblue",
           }}
@@ -43,7 +43,7 @@ function NavBar() {
         <NavLink
           to="/favourites"
           exact
-          style={linkStyles}
+          // style={linkStyles}
           activeStyle={{
             background: "darkblue",
           }}
@@ -53,7 +53,7 @@ function NavBar() {
         <NavLink
           to="/admin"
           exact
-          style={linkStyles}
+          // style={linkStyles}
           activeStyle={{
             background: "darkblue",
           }}
