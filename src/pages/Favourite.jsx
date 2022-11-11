@@ -46,7 +46,7 @@ function Favourite( { favourite, setFavourite, data } ) {
             </Card.Header>
             <Card.Img variant="top" src={data.img} className="cardimage" />
             <Card.Body>
-              <Card.Text>
+              <Card.Text className="card-txt">
                 My name is {data.name}, {data.owner} is my owner and we stay in {data.location}.
               </Card.Text>
             </Card.Body>

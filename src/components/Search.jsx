@@ -6,8 +6,8 @@ function Search( { data, setData } ) {
   // const initData = data
 
   useEffect(() => {
-    const filteredPets = data.filter(d => {
-      const lowerPet = d.description.toLowerCase()
+    const filteredPets = data.filter(data => {
+      const lowerPet = data.name.toLowerCase()
       return lowerPet.includes(searchValue.toLowerCase())
       })
       setData(filteredPets)

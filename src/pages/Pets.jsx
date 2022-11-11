@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import ListGroupItem from 'react-bootstrap/esm/ListGroupItem';
 import PlaceHolderComp from '../components/PlaceHolderComp';
 import Footer from '../components/Footer';
-// import Search from '../components/Search';
+import Search from '../components/Search';
 
 function Pets( { data, setData, favourite, setFavourite } ) {
     const [ timing, setTiming ] = useState(true)
@@ -31,8 +31,8 @@ function Pets( { data, setData, favourite, setFavourite } ) {
 
     return (
       <>
-      {/* <Search data={data} setData={setData} /> */}
-      <p>Search</p>
+      <Search data={data} setData={setData} />
+      {/* <p>Search</p> */}
       <Container fluid="md" className='mainContainer'>
       <Row className="justify-content-md-center">
         { data.map(data => ( 
@@ -42,13 +42,13 @@ function Pets( { data, setData, favourite, setFavourite } ) {
               <Card.Title>{data.name}</Card.Title>
             </Card.Header>
             <Card.Img variant="top" src={data.img} className="cardimage" />
-            <Card.Body>
-              <Card.Text>
+            {/* <Card.Body> */}
+              <Card.Text className="card-txt">
                 My name is {data.name}. {data.owner} is my owner and we stay in {data.location}.
               </Card.Text>
-            </Card.Body>
+            {/* </Card.Body> */}
             <Card.Body>
-            <Stack direction="horizontal" gap={2}>
+            <Stack direction="horizontal" gap={1}>
                 <ListGroupItem as="a" variant="success">
                   <Button gap={1} onClick={handleClick} value={data.id}>
                     Buy Me

@@ -114,6 +114,14 @@ div.transbox h1 {
   margin: 15px
 }
 
+.cardimage{
+  max-height: 30vh;
+}
+
+.card-txt{
+  font-size: large;
+}
+
 .img-container::before {
   content: '';
   width: 100%;
