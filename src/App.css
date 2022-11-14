@@ -181,3 +181,62 @@ div.transbox h1 {
   bottom: 0;
   margin-top: auto;
 }
+
+/* Admin Form  */
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input {
+  width: 25% !important;
+  margin-right: 0.25em!important;
+  margin-left: 0.25em!important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+/* Form styles  */
+form {
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+input, select {
+  background-color: #b8ffb2;
+  width: 100%; 
+  margin-bottom: 1rem;   
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+img {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.add-pet-button{
+  min-width: 50%;
+}
+
+.add-pet-button:hover{
+  background-color: #8faacc;
+}

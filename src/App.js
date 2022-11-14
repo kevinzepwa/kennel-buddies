@@ -4,21 +4,22 @@ import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from './pages/Home';
 import About from "./pages/About";
-import Pets from './pages/Pets'
+import PetsUser from './pages/PetsUser'
 import Favourite from './pages/Favourite'
 import 'bootstrap/dist/css/bootstrap.min.css';  //I'm using the CDN instead
+import AdminForm from "./pages/AdminForm";
 
 
 function App() {
     const [ data, setData ] = useState([])
     const [ favourite, setFavourite ] = useState([])
-    const url_1 = "http://localhost:9298/api/pets"
-    // const url_2 = "http://localhost:9298/api/fav"
+    const url_1 = "http://localhost:9299/api/pets"
+    // const url_2 = "http://localhost:9299/api/fav"
 
     useEffect(() => {
         fetch(url_1)
         .then(res => res.json()) 
-        .then(newData => setData(newData))
+        .then(newData => setData(newData.slice(1, 9)))
     }, []);
 
     useEffect(() => {
@@ -27,7 +28,7 @@ function App() {
         .then(newFavourite => setFavourite(newFavourite))
     }, []);
 
-    // console.log(data)
+    console.log(data)
 
     return (
     <div>
@@ -35,7 +36,7 @@ function App() {
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
-            <Route path='/pets' element={<Pets 
+            <Route path='/pets' element={<PetsUser 
                                             data={data} 
                                             setData={setData}
                                             favourite={favourite}
@@ -45,6 +46,10 @@ function App() {
                                             data={data}
                                             favourite={favourite}
                                             setFavourite={setFavourite}
+                                            />} />
+            <Route path='/admin' element={<AdminForm 
+                                            data={data}
+                                            setData={setData}
                                             />} />
         </Routes>
         </div>

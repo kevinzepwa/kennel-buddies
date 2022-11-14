@@ -9,7 +9,7 @@ import PlaceHolderComp from '../components/PlaceHolderComp';
 import Footer from '../components/Footer';
 import Search from '../components/Search';
 
-function Pets( { data, setData, favourite, setFavourite } ) {
+function PetsUser( { data, setData, favourite, setFavourite } ) {
     const [ timing, setTiming ] = useState(true)
 
     setTimeout((timing) => setTiming(false), 2000);
@@ -71,7 +71,7 @@ function Pets( { data, setData, favourite, setFavourite } ) {
   );
 }
 
-export default Pets;
+export default PetsUser;
 
 
 

@@ -20,16 +20,7 @@ function NavBar() {
           >
             Home
           </NavLink>
-          <NavLink
-            to="/about"
-            exact
-            className="nav"
-            activeStyle={{
-              background: "darkblue",
-            }}
-          >
-            About
-          </NavLink>
+          
           <NavLink
             to="/pets"
             exact
@@ -40,6 +31,7 @@ function NavBar() {
           >
             Pets
           </NavLink>
+
           <NavLink
             to="/favourite"
             exact
@@ -50,6 +42,18 @@ function NavBar() {
           >
             Favourites
           </NavLink>
+
+          <NavLink
+            to="/about"
+            exact
+            className="nav"
+            activeStyle={{
+              background: "darkblue",
+            }}
+          >
+            About
+          </NavLink>
+          
           <NavLink
             to="/admin"
             exact
