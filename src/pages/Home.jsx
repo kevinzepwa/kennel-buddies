@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 
 function Home( { data, setData } ) {
   function handleClick() {
-    //console.log("<<<>>>")
+    //console.log("<<<")
   }
 
   return (
